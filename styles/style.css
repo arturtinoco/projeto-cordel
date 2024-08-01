@@ -1,0 +1,122 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Passion+One:wght@400;700;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Passion+One:wght@400;700;900&family=Sriracha&display=swap');
+
+:root {
+    --font001: Verdana, Geneva, Tahoma, sans-serif;
+    --font002: 'Passion One', cursive;
+    --font003: 'Sriracha', cursive;
+    --bg001: url('../imagens/background001.jpg');
+    --bg002: url('../imagens/background002.jpg');
+
+}
+
+* {
+    margin: 0px;
+}
+
+html, body {
+    min-height: 100vh;
+    font-family: var(--fontDefault);
+}
+
+
+header {
+    background-color: black;
+    color: white;
+
+    text-align: center;
+
+    /*padding: 2.5vw 0vw 4.2vw 0vw;*/
+}
+
+header > h1 {
+    font-family: var(--font002);
+    font-size: 10vw;
+    font-weight: 700;
+    font-variant-caps: small-caps;
+  
+    padding-top: 50px;
+}
+
+header > p {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.1em;
+    letter-spacing: 0.8px;
+    
+    padding-bottom: 50px;
+}
+
+header a, footer a {
+    color: white;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+header a:hover, footer a:hover {
+    text-decoration: underline;
+}
+
+section {
+    font-family: var(--font003);
+    font-size: 3.5vw;
+    line-height: 5vw;
+
+    padding: 10vh 0vh 10vh 0vh;
+    padding-left: 30px;
+}
+
+section > p {
+    padding-bottom: 2em;
+}
+
+section.plainBG {
+    display: inline-block;
+    background-color: white;
+    color: black;
+    /*margin: 8vw 0vw 11vw 6vw;*/
+}
+
+section.photoBG {
+    color: white;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    box-shadow: inset 6px 6px 13px 0px black;
+
+    min-height: 70vw;
+    max-height: 100vw;
+    margin: auto;
+}
+
+section.photoBG > p {
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.507);
+    text-shadow: 1px 1px 0px black;
+    padding: 5px;
+}
+
+section#img001 {
+    background-image: var(--bg001);
+    background-position: center right;
+    
+}
+
+section#img002 {
+    background-image: var(--bg002);
+    background-position: bottom left;
+}
+
+footer {
+    background-color: black;
+    color: white;
+
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    letter-spacing: 1px;
+
+    padding: 10px;
+}
